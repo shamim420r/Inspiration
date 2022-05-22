@@ -1,0 +1,545 @@
+@import url(//db.onlinewebfonts.com/c/07beb3ddf37cddf361ffb6d3646e3692?family=Helvetica+Neue+LT+Com);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+/* Fonts ===================
+@font-face{
+  font-family:"Helvetica-Light";
+  src:url("http://www.myfontfree.com/data/502/h/helvetica-light/HelveticaLt.ttf");
+}
+@font-face{
+  font-family:"HelveticaNeue";
+  src:url("http://www.myfontfree.com/data/502/h/helveticaneue/HelveticaNeue.ttf");
+}
+@font-face {font-family: "Helvetica Neue LT Com";
+    src: url("http://db.onlinewebfonts.com/t/07beb3ddf37cddf361ffb6d3646e3692.eot");
+    src: url("http://db.onlinewebfonts.com/t/07beb3ddf37cddf361ffb6d3646e3692.eot?#iefix") format("embedded-opentype"),
+    url("http://db.onlinewebfonts.com/t/07beb3ddf37cddf361ffb6d3646e3692.woff2") format("woff2"),
+    url("http://db.onlinewebfonts.com/t/07beb3ddf37cddf361ffb6d3646e3692.woff") format("woff"),
+    url("http://db.onlinewebfonts.com/t/07beb3ddf37cddf361ffb6d3646e3692.ttf") format("truetype"),
+    url("http://db.onlinewebfonts.com/t/07beb3ddf37cddf361ffb6d3646e3692.svg#Helvetica Neue LT Com") format("svg");
+}
+font-family: 'HelveticaNeue', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Helvetica-Light', sans-serif;
+font-family: 'Helvetica Neue LT Com', sans-serif;
+==============================*/
+body{
+  background: #374140;
+  color: #fff;
+}
+a{
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+}
+/* >> Nav menu style 
+====================================================== */
+header .mhr-logo img{
+  float: right;
+  margin-top: 6px;
+}
+header{
+  border-bottom: 2px solid #a3422f;
+  padding: 22px 0px
+}
+.mhr-navbar {
+  top: 0px;
+  height: 70px;
+}
+
+.mhr-nav {
+  margin: 0px auto;
+  padding: 0;
+  height: 70px;
+  text-align: left;
+  width: 100%;
+}
+.mhr-nav li {
+  margin-top: 25px;
+  display: inline-block;
+}
+.mhr-nav li a {
+  font-family: 'Open Sans', sans-serif;
+  padding-right: 30px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.mhr-nav li a:hover {
+  text-decoration: underline;
+}
+.nav-icon {
+  display: none;
+}
+.display-v{
+  display: none;
+}
+@media screen and (max-width: 1023px) {
+  header img {
+    margin-top: 6px;
+ }
+  .display-v{
+    display: inherit;
+    float: left;
+  }
+   .display-n{
+    display: none;
+   }
+  #togglemenu {
+    display: none;
+  }
+  .nav-icon-position {
+    position: absolute;
+    top: 15px;
+    right: 0px;
+    margin-top: 20px;
+    float: right;
+  }
+  .nav-icon {
+    background: transparent;
+    display: block;
+    border: 1px solid #ffffff;
+    height: 36px;
+    width: 40px;
+    border-radius: 4px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    outline: none;
+  }
+  .nav-icon:hover {
+    background: transparent;
+    border: none;
+    border: 1px solid #bdbdbd;
+  }
+  .nav-icon span.icon-line {
+    background: #ffffff;
+  }
+  .icon-line {
+    display: block;
+    background: #bdbdbd;
+    height: 3px;
+    width: 24px;
+    margin: 4px auto;
+  }
+  .mhr-nav {
+    position: relative;
+    top: 14px;
+    padding: 0;
+    text-align: left;
+    z-index: 999;
+  }
+  .mhr-nav li:first-child{
+    border-top: 1px solid #d7d7d7;
+  }
+  .mhr-nav li {
+    background: #374140;
+    display: block;
+    margin: 0;
+    padding: 15px;
+    border-bottom: 1px solid #d7d7d7;
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  .mhr-nav li:hover a{
+     text-decoration: underline;
+  }
+  .mhr-nav li a {
+    padding: 15px;
+    color: #ffffff;
+  }
+  .mhr-nav li a:hover {
+    color: #0f9beb;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mhr-nav li {
+    padding: 10px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  header .logo-wrapper img {
+    margin-top: 12px;
+    width: 200px;
+  }
+  header {
+    padding-bottom: 30px;
+  }
+}
+/*  Nav menu style << 
+============================================================== */
+
+.intro-text{
+      padding: 31px 0px;
+}
+
+/* >> Catagory
+============================================================== */
+.pagina {
+    width: 80%;
+    margin:auto;
+}
+.barra-menu {
+    width: 100%;
+    overflow: hidden;
+}
+.menu {
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.lista-menu li a{
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+.lista-menu li a:hover{
+  color: #e0dada;
+}
+.lista-menu li a:after{
+  content: "|";
+  color: #ffffff;
+  padding: 0px 15px;
+}
+.lista-menu li a.last-m-i:after{
+  content: "|";
+  display: none;
+}
+.lista-menu li {
+    display: inline-block;
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.lista-menu li:last-child {
+    border-right: none;
+}
+.lista-menu a, .btn-menu {
+    display: block;
+    width: 100%;
+    height: 2em;
+    line-height: 24px;
+}
+.btn-menu {
+    display: none;
+}
+}
+/*  ------ tipografías----------------- */
+
+/*........ Alineamiento........*/
+ .aln-izquierda {
+    text-align: left;
+}
+.aln-centro {
+    text-align: center;
+}
+.aln-derecha {
+    text-align: right;
+}
+.lista-menu a, .btn-menu {
+    text-decoration: none;
+    color: #fff;
+}
+.lista-menu a:hover {
+}
+/*  ------------- media queries ----------*/
+ @media screen and (max-width:1023px) {
+    .lista-menu li a:after{
+    display: none;
+    }
+    #pagina {
+        width: 100%;
+    }
+    .btn-menu {
+        display: block;
+        background-color: #333;
+    }
+    #submenu {
+        display: none;
+    }
+    .lista-menu li {
+        display: block;
+        float: none;
+        width: 100%;
+        border-bottom: 1px solid #7E7E7E;
+    }
+    .lista-menu li a{
+      font-size: 14px;
+    }
+    .lista-menu a, .btn-menu {
+      display: block;
+      width: 100%;
+      height: 2.6em;
+      line-height: 38px;
+  }
+}
+
+/* Catagory << 
+============================================================== */
+
+/* Page Title style ====================*/
+.mhr-title{
+  font-family: 'Helvetica Neue LT Com', sans-serif;
+  font-size: 52px;
+  margin: 0px;
+}
+
+/* >> Item hover effect 
+============================================================== */
+figure.mhr-fig {
+  color: #fff;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 5px 0%;
+  width: 100%;
+  color: #000000;
+  text-align: center;
+  max-height: 365px;
+  min-height: 365px;
+}
+figure.mhr-fig * {
+  -webkit-box-sizing: padding-box;
+  box-sizing: padding-box;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+figure.mhr-fig img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+  max-height: 365px;
+  min-height: 365px;
+}
+figure.mhr-fig figcaption {
+  top: 50%;
+  left: 20px;
+  right: 20px;
+  position: absolute;
+  opacity: 0;
+  z-index: 1;
+}
+figure.mhr-fig h2,
+figure.mhr-fig h4 {
+  margin: 0;
+}
+figure.mhr-fig i {
+  font-size: 32px;
+}
+figure.mhr-fig:after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+figure.mhr-fig a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+}
+figure.mhr-fig:hover figcaption,
+figure.mhr-fig.hover figcaption {
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  opacity: 1;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+figure.mhr-fig:hover:after,
+figure.mhr-fig.hover:after {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+  opacity: 1;
+}
+
+/* Item hover effect << 
+============================================================== */
+
+/* >> Item section style 
+============================================================== */
+.first-items-section .mhr-sec-w{
+  padding: 20px 0px 40px 0px;
+  border-bottom: 2px solid #ffffff;
+}
+.secend-items-section .mhr-sec-w{
+      border-bottom: 2px solid #ffffff;
+      padding: 40px 0px;
+} 
+.first-items-section p, .secend-items-section p{
+  color: #ffffff;
+}
+.first-items-section figure.mhr-fig:after{
+ background: #a3422f;
+}
+.first-items-section figure.mhr-fig h4{
+  font-family: 'Helvetica-Light', sans-serif;
+  font-size: 65px;
+  margin: 0;
+  color: #ffffff;
+  font-weight: 300;
+  line-height: 25px;
+  line-height: 65px;
+}
+.first-items-section  figure.mhr-fig h2{
+  font-family: 'Helvetica Neue LT Com', sans-serif;
+  font-size: 55px;
+  color: #7b2a1a;
+  font-weight: 800;
+ line-height: 65px;
+}
+.secend-items-section figure.mhr-fig:after{
+  background: #596949;
+}
+.secend-items-section figure.mhr-fig h4{
+  font-size: 65px;
+  color: #ffffff;
+  font-weight: 300;
+  line-height: 65px;
+}
+.secend-items-section figure.mhr-fig h2{
+  font-family: 'Helvetica Neue LT Com', sans-serif;
+  font-size: 81px;
+  color: #87917c;
+  font-weight: 800;
+  line-height: 65px;
+}
+@media (min-width: 1024px) and (max-width: 1220px) {
+  .first-items-section figure.mhr-fig h2 {
+    font-size: 40px;
+  }
+  .first-items-section figure.mhr-fig h4 {
+    font-size: 50px;
+  }
+  .secend-items-section figure.mhr-fig h2 {
+    font-size: 55px;
+  }
+  .secend-items-section figure.mhr-fig h4{
+  font-size: 55px;
+  }
+}
+@media (min-width: 850px) and (max-width: 1024px) {
+  .first-items-section figure.mhr-fig h2 {
+    font-size: 40px;
+  }
+  .first-items-section figure.mhr-fig h4 {
+    font-size: 50px;
+  }
+  .secend-items-section figure.mhr-fig h2 {
+    font-size: 55px;
+  }
+  .secend-items-section figure.mhr-fig h4{
+  font-size: 55px;
+  }
+}
+@media (min-width: 768px) and (max-width: 850px) {
+  .first-items-section figure.mhr-fig h2 {
+    font-size: 40px;
+  }
+  .first-items-section figure.mhr-fig h4 {
+    font-size: 50px;
+  }
+  .secend-items-section figure.mhr-fig h2 {
+    font-size: 55px;
+  }
+  .secend-items-section figure.mhr-fig h4{
+  font-size: 55px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .first-items-section figure.mhr-fig h2 {
+    font-size: 40px;
+  }
+  .first-items-section figure.mhr-fig h4 {
+    font-size: 50px;
+  }
+  .secend-items-section figure.mhr-fig h2 {
+    font-size: 55px;
+  }
+  .secend-items-section figure.mhr-fig h4{
+  font-size: 55px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .first-items-section figure.mhr-fig h2 {
+    font-size: 40px;
+  }
+  .first-items-section figure.mhr-fig h4 {
+    font-size: 50px;
+  }
+  .secend-items-section figure.mhr-fig h2 {
+    font-size: 50px;
+  }
+  .secend-items-section figure.mhr-fig h4{
+  font-size: 50px;
+  }
+}
+/* Item section style << 
+============================================================== */
+
+/* >> Footer 
+============================================================== */
+footer{
+  background: #293130;
+  margin-top: 40px;
+  border-bottom: 3px solid #374140;
+}
+footer p{
+  margin: 0px;
+  font-family: 'Open Sans', sans-serif;
+  color: #fbfaf5;
+}
+.footer-gri-wrapper{
+padding: 36px 0px 51px 0px;
+}
+.mhr-f-wrapper{
+  border-bottom: 3px solid #293130;
+}
+.mhr-f-menu-wrapper .mhr-f-menu{
+  float: right;
+}
+.mhr-f-menu li{
+  display: inline-block;
+}
+.mhr-f-menu li a{
+  font-family: 'Open Sans', sans-serif;
+  color: #fbfaf5;
+  padding-left:35px;
+}
+.mhr-f-menu li a:hover{
+  text-decoration: underline;
+}
+@media screen and (max-width: 1023px) {
+  .footer-gri-wrapper{
+    text-align: center;
+  }
+  .mhr-f-menu-wrapper .mhr-f-menu {
+      float: none;
+      padding-top: 10px;
+      padding-bottom: 25px;
+  }
+}
+ @media screen and (max-width: 500px) {
+  .mhr-f-menu li a {
+    font-family: 'Open Sans', sans-serif;
+    color: #fbfaf5;
+    padding-left: 8px;
+}
+ }
+/* Footer << 
+============================================================== */
